@@ -1,0 +1,8 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(/src/assets/images/pipboy.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Alinha os elementos filhos (os botões) ao centro */
+  }
