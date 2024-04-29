@@ -19,7 +19,8 @@ h1 {
   }
   
   button:hover {
-    background-color: rgba(0, 255, 0, 0.1);
+    background-color: #0f0; /* Verde lima muito claro */
+    color: #006400; /* Verde escuro */
   }
   .container {
     font-family: 'Courier New', Courier, monospace;
