@@ -9,6 +9,10 @@ select{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.org{
+  display: flex;
+  flex-direction: column;
+}
 h1 {
     font-size: 36px;
     margin-bottom: 30px;
@@ -58,14 +62,16 @@ h1 {
   
   input[type="number"] {
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto; /* Adicionando 'auto' ao margin alinhará o elemento horizontalmente */
     font-size: 16px;
     border: 1px solid #0f0;
     border-radius: 5px;
     width: 200px;
     background-color: transparent;
-    color:#0f0 ;
-  }
+    color: #0f0;
+    text-align: center; /* Alinha o texto dentro do input ao centro */
+    display: block; /* Garante que o input ocupará toda a largura do container pai */
+}
   
   .botoes {
     display: flex;

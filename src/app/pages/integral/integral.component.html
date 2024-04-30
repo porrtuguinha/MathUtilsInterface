@@ -9,7 +9,7 @@
         <option [ngValue]="'cosseno'" >Cosseno</option>
     
     </select>
-        <div *ngIf="Parametros ==='primeirograu' ">
+        <div class="org" *ngIf="Parametros ==='primeirograu' ">
       <label class="texto" for="parametroA">Digite o parametro A:</label>
       <input type="number" id="parametroA" [(ngModel)]="a" inputmode="numeric" required>
     
@@ -22,7 +22,7 @@
       <label class="texto" for="parametroC">Digite parametro B da integral:</label>
       <input type="number" id="parametroC" [(ngModel)]="i_2" inputmode="numeric" required>
         </div>
-        <div *ngIf="Parametros ==='segundograu' ">
+        <div class="org" *ngIf="Parametros ==='segundograu' ">
             <label class="texto" for="parametroA">Digite o parametro A:</label>
             <input type="number" id="parametroA" [(ngModel)]="a2" inputmode="numeric" required>
           
@@ -38,7 +38,7 @@
             <label class="texto" for="parametroC">Digite parametro B da integral:</label>
             <input type="number" id="parametroC" [(ngModel)]="i_22" inputmode="numeric" required>
               </div>
-              <div *ngIf="Parametros ==='terceirograu' ">
+              <div class="org" *ngIf="Parametros ==='terceirograu' ">
                 <label class="texto" for="parametroA">Digite o parametro A:</label>
                 <input type="number" id="parametroA" [(ngModel)]="a3" inputmode="numeric" required>
               
@@ -57,11 +57,11 @@
                 <label class="texto" for="parametroC">Digite parametro B da integral:</label>
                 <input type="number" id="parametroC" [(ngModel)]="i_23" inputmode="numeric" required>
                   </div>
-                  <div *ngIf="Parametros ==='seno' ">
+                  <div class="org" *ngIf="Parametros ==='seno' ">
                     <label class="texto" for="parametroA">Digite o ponto da função em graus:</label>
                     <input type="number" id="parametroA" [(ngModel)]="x4" inputmode="numeric" required>
                       </div>
-                      <div *ngIf="Parametros ==='cosseno'">
+                      <div class="org" *ngIf="Parametros ==='cosseno'">
                         <label class="texto" for="parametroA">Digite o ponto da função em graus:</label>
                         <input type="number" id="parametroA" [(ngModel)]="x5" inputmode="numeric" required>
                           </div>
