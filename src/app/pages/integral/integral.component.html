@@ -1,1 +1,74 @@
-<p>integral works!</p>
+<div class="container">
+    <h1>Calculadora de Integral</h1>
+    <label>insira o tipo de de função que voce quer integrar</label>
+    <select  [(ngModel)]="Parametros">
+        <option [ngValue]="'primeirograu'" >Primeiro grau</option>
+        <option [ngValue]="'segundograu'" >Segundo grau</option>
+        <option [ngValue]="'terceirograu'" >Terceiro grau</option>
+        <option [ngValue]="'seno'" >Seno</option>
+        <option [ngValue]="'cosseno'" >Cosseno</option>
+    
+    </select>
+        <div *ngIf="Parametros =='primeirograu' ">
+      <label class="texto" for="parametroA">Digite o parametro A:</label>
+      <input type="number" id="parametroA" [(ngModel)]="a" inputmode="numeric" required>
+    
+      <label class="texto" for="parametroB">Digite o Parametro B:</label>
+      <input type="number" id="parametroB" [(ngModel)]="b" inputmode="numeric" required>
+    
+      <label class="texto" for="parametroC">Digite parametro A da integral:</label>
+      <input type="number" id="parametroC" [(ngModel)]="i" inputmode="numeric" required>
+    
+      <label class="texto" for="parametroC">Digite parametro B da integral:</label>
+      <input type="number" id="parametroC" [(ngModel)]="i_2" inputmode="numeric" required>
+        </div>
+        <div *ngIf="Parametros =='segundograu' ">
+            <label class="texto" for="parametroA">Digite o parametro A:</label>
+            <input type="number" id="parametroA" [(ngModel)]="a2" inputmode="numeric" required>
+          
+            <label class="texto" for="parametroB">Digite o Parametro B:</label>
+            <input type="number" id="parametroB" [(ngModel)]="b2" inputmode="numeric" required>
+            
+            <label class="texto" for="parametroB">Digite o Parametro C:</label>
+            <input type="number" id="parametroB" [(ngModel)]="c2" inputmode="numeric" required>
+          
+            <label class="texto" for="parametroC">Digite parametro A da integral:</label>
+            <input type="number" id="parametroC" [(ngModel)]="i2" inputmode="numeric" required>
+          
+            <label class="texto" for="parametroC">Digite parametro B da integral:</label>
+            <input type="number" id="parametroC" [(ngModel)]="i_22" inputmode="numeric" required>
+              </div>
+              <div *ngIf="Parametros =='terceirograu' ">
+                <label class="texto" for="parametroA">Digite o parametro A:</label>
+                <input type="number" id="parametroA" [(ngModel)]="a3" inputmode="numeric" required>
+              
+                <label class="texto" for="parametroB">Digite o Parametro B:</label>
+                <input type="number" id="parametroB" [(ngModel)]="b3" inputmode="numeric" required>
+                
+                <label class="texto" for="parametroB">Digite o Parametro C:</label>
+                <input type="number" id="parametroB" [(ngModel)]="c3" inputmode="numeric" required>
+
+                <label class="texto" for="parametroB">Digite o Parametro D:</label>
+                <input type="number" id="parametroB" [(ngModel)]="d3" inputmode="numeric" required>
+              
+                <label class="texto" for="parametroC">Digite parametro A da integral:</label>
+                <input type="number" id="parametroC" [(ngModel)]="i3" inputmode="numeric" required>
+              
+                <label class="texto" for="parametroC">Digite parametro B da integral:</label>
+                <input type="number" id="parametroC" [(ngModel)]="i_23" inputmode="numeric" required>
+                  </div>
+                  <div *ngIf="Parametros =='seno' ">
+                    <label class="texto" for="parametroA">Digite o ponto da função em graus:</label>
+                    <input type="number" id="parametroA" [(ngModel)]="x4" inputmode="numeric" required>
+                      </div>
+                      <div *ngIf="Parametros =='cosseno'">
+                        <label class="texto" for="parametroA">Digite o ponto da função em graus:</label>
+                        <input type="number" id="parametroA" [(ngModel)]="x4" inputmode="numeric" required>
+                          </div>
+                          <button (click)="calcular()">Calcular</button>
+    <div *ngIf="resultado !== undefined">
+      <h2 class="texto">Resultados:</h2>
+      <p class="texto">{{ resultado }}</p>
+    </div>
+    <button (click)="voltar()" class="botao-voltar">Voltar</button>
+    </div>
