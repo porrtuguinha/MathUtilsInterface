@@ -11,4 +11,5 @@ export const routes: Routes = [
     {path: 'equacaosegundograu', component: EquacaoSegundoGrauComponent},
     {path: 'derivada', component: DerivadaComponent },
     {path: 'integral', component: IntegralComponent},
+    {path: 'derivada', component: DerivadaComponent},
 ]

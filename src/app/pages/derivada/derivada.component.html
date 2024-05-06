@@ -1,1 +1,21 @@
-<p>derivada works!</p>
+<div class="container">
+    <h1>Calculadora de Equação de Segundo Grau</h1>
+    
+      <label class="texto" for="parametroA">Digite o valor de a:</label>
+      <input type="number" id="parametroA" [(ngModel)]="a" inputmode="numeric" required>
+    
+      <label class="texto" for="parametroB">Digite o valor de b:</label>
+      <input type="number" id="parametroB" [(ngModel)]="b" inputmode="numeric" required>
+    
+      <label class="texto" for="parametroC">Digite o valor de c:</label>
+      <input type="number" id="parametroC" [(ngModel)]="c" inputmode="numeric" required>
+      <label class="texto" for="parametroC">Digite o ponto que você deseja a derivada:</label>
+      <input type="number" id="parametroC" [(ngModel)]="xi" inputmode="numeric" required>
+      <button (click)="calcularDerivada()">Calcular</button>
+    
+    <div *ngIf="resultado !== undefined">
+      <h2 class="texto">Resultados:</h2>
+      <p class="texto">{{ resultado }}</p>
+    </div>
+    <button (click)="voltar()" class="botao-voltar">Voltar</button>
+    </div>
