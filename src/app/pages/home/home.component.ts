@@ -23,4 +23,7 @@ export class HomeComponent {
   irParaIntegral() {
     this.router.navigate(['/integral']);
   }
+  irParaErlang() {
+    this.router.navigate(['/erlangc']);
+  }
 }
