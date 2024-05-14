@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [ngClass]="{'result-background': results !== undefined}">
     <h1>calculadora de erlangC</h1>
     
       <label class="texto" for="parametroA">Digite o trafego(erlangs):</label>
@@ -15,7 +15,7 @@
     
       <button (click)="calculateTraffic()">Calcular</button>
     
-    <div *ngIf="results !== undefined">
+    <div *ngIf="results !== undefined" class="result-container">
         <div *ngFor="let result of results">
             <p class="texto">Tempo: {{ result.time }} segundos - Perda de pacotes (Erlang C): {{ result.erlangC }}%</p>
           </div>

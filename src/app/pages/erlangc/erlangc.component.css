@@ -43,6 +43,7 @@ h1 {
     display: flex; /* Torna o contêiner um flex container */
     flex-direction: column; /* Define a direção dos itens como coluna */
     align-items: center; /* Alinha os itens horizontalmente ao centro */
+    
   }
   
   input[type="number"] {
@@ -78,3 +79,14 @@ h1 {
     background-color: #0f0; /* Verde lima muito claro */
     color: #006400; /* Verde escuro */
   }
+  .result-container {
+    background-color: rgba(0, 255, 0, 0.1); /* Cor de fundo verde com transparência */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px; /* Espaçamento entre os resultados e outros elementos acima */
+    margin-bottom: 20px; /* Espaçamento entre os resultados e outros elementos abaixo */
+    max-width: 80%; /* Defina uma largura máxima para evitar que o contêiner se estenda demais */
+    width: auto; /* Permita que o contêiner se ajuste ao conteúdo */
+    text-align: center; /* Centralize o conteúdo */
+    z-index: 1; /* Garanta que o contêiner de resultados esteja na frente do fundo */
+}
