@@ -29,4 +29,7 @@ export class HomeComponent {
   irParaaceleracao(){
     this.router.navigate(['/aceleracao'])
   }
+  irParalancamento(){
+    this.router.navigate(['/lancHorizontal'])
+  }
 }

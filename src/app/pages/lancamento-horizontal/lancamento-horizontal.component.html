@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Calculadora de Lançamento horizontal</h1>
+    
+      <label class="texto" for="parametroA">Digite a velocidade inicial:</label>
+      <input type="number" id="parametroA" [(ngModel)]="velocidadeInicial" inputmode="numeric" required>
+    
+      <label class="texto" for="parametroB">Digite o angulo:</label>
+      <input type="number" id="parametroB" [(ngModel)]="angulo" inputmode="numeric" required>
+
+      <label class="texto" for="parametroB">Digite a gravidade:</label>
+      <input type="number" id="parametroB" [(ngModel)]="grvidade" inputmode="numeric" required>
+    
+      <button (click)="calcular()">Calcular</button>
+    
+    <div *ngIf="resultado !== undefined">
+      <h2 class="texto">Resultados:</h2>
+      <p class="texto">{{ resultado }}</p>
+    </div>
+    <button (click)="voltar()" class="botao-voltar">Voltar</button>
+    </div>

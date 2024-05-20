@@ -6,6 +6,7 @@ import { DerivadaComponent } from './pages/derivada/derivada.component';
 import { IntegralComponent } from './pages/integral/integral.component';
 import { ErlangcComponent } from './pages/erlangc/erlangc.component';
 import { ForcaDeAceleracaoComponent } from './pages/forca-de-aceleracao/forca-de-aceleracao.component';
+import { LancamentoHorizontalComponent } from './pages/lancamento-horizontal/lancamento-horizontal.component';
 
 export const routes: Routes = [
 
@@ -14,6 +15,7 @@ export const routes: Routes = [
     {path: 'derivada', component: DerivadaComponent },
     {path: 'integral', component: IntegralComponent},
     {path: 'erlangc', component: ErlangcComponent},
-    {path: 'aceleracao', component: ForcaDeAceleracaoComponent}
+    {path: 'aceleracao', component: ForcaDeAceleracaoComponent},
+    {path: 'lancHorizontal', component: LancamentoHorizontalComponent}
     
 ]
