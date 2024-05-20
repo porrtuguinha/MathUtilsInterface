@@ -5,6 +5,7 @@ import { EquacaoSegundoGrauComponent } from './pages/equacao-segundo-grau/equaca
 import { DerivadaComponent } from './pages/derivada/derivada.component';
 import { IntegralComponent } from './pages/integral/integral.component';
 import { ErlangcComponent } from './pages/erlangc/erlangc.component';
+import { ForcaDeAceleracaoComponent } from './pages/forca-de-aceleracao/forca-de-aceleracao.component';
 
 export const routes: Routes = [
 
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path: 'equacaosegundograu', component: EquacaoSegundoGrauComponent},
     {path: 'derivada', component: DerivadaComponent },
     {path: 'integral', component: IntegralComponent},
-    {path: 'erlangc', component: ErlangcComponent}
+    {path: 'erlangc', component: ErlangcComponent},
+    {path: 'aceleracao', component: ForcaDeAceleracaoComponent}
     
 ]

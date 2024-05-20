@@ -26,4 +26,7 @@ export class HomeComponent {
   irParaErlang() {
     this.router.navigate(['/erlangc']);
   }
+  irParaaceleracao(){
+    this.router.navigate(['/aceleracao'])
+  }
 }
